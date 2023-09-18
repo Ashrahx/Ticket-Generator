@@ -46,10 +46,10 @@ def generate_ticket_number():
 
 def generate_ticket_pdf(ticket_number):
     try:
-        file_name = f"C:\\Users\\Elfud\\Desktop\\Project R\\tickets\\tickets.pdf"
+        file_name = f"C:\\Users\\Elfud\\Desktop\\Ticket-Generator\\tickets\\tickets.pdf"
         pdf_file = canvas.Canvas(file_name, pagesize=letter)
         pdf_file.setFont("Helvetica", 12)
-        pdf_file.setPageSize((3 * inch, 2 * inch))
+        pdf_file.setPageSize((5.65 * inch, 7.26 * inch))
         pdf_file.drawString(0.5 * inch, 1.5 * inch, "Folio:")
         pdf_file.drawString(1.5 * inch, 1.5 * inch, ticket_number)
         pdf_file.save()
