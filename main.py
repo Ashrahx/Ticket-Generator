@@ -7,8 +7,8 @@ import pymysql
 def connect_to_database():
     connection = pymysql.connect(
         host='localhost',
-        user='Ashrah',
-        password='GGWPYATMVP',
+        user='root',
+        password='*****',
         database='turns',
         cursorclass=pymysql.cursors.DictCursor
     )
